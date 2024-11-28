@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./work.scss";
 
+//import assets
+import plusIcon from '../../assets/icons/chromeye_assignment_plus_v1.svg';
+import minusIcon from '../../assets/icons/chromeye_assignment_minus_v1.svg';
+
 const Work = () => {
   const [data, setData] = useState(null);
 
@@ -27,7 +31,20 @@ const Work = () => {
                 className="icon"
               />
               <h2 className="item-title">{item.title}</h2>
-              <p className="item-description">{item.description}</p>
+
+              {/* Condition render for Icons */}
+              {(item.title === "Web Assets" || item.title === "Corporate Identity") && (
+                <img src={plusIcon} alt="Plus Icon" className="icon-center" />
+              )}
+              {(item.title === "Dynamic Digital Ads" || item.title === "3D Visuals") && (
+                <img src={minusIcon} alt="Minus Icon" className="icon-center" />
+              )}
+
+              {/* Condition render for Description */}
+              {item.title !== "Web Assets" && item.title !== "Corporate Identity" && (
+                <p className="item-description">{item.description}</p>
+              )}
+
             </div>
           ))}
         </div>
