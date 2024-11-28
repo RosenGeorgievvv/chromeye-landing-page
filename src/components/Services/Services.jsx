@@ -5,7 +5,7 @@ import "./services.scss";
 import plusIcon from '../../assets/icons/chromeye_assignment_plus_v1.svg';
 import minusIcon from '../../assets/icons/chromeye_assignment_minus_v1.svg';
 
-const Work = () => {
+const Services = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -56,4 +56,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Services;

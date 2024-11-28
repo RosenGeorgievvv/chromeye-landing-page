@@ -6,7 +6,8 @@ import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import AgencyService from "./components/AgencyServices/AgencyService";
 import Banner from "./components/Banner/Banner";
-import Footer from "./components/Footer/Footer";
+import Footer from './components/Footer/Footer'
+import Work from "./components/Work/Work";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <Services />
+      <Work />
       <AgencyService />
       <Banner />
       <Footer />

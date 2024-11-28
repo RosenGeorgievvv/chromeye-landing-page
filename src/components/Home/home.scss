@@ -13,14 +13,14 @@
   
       .title {
         max-width: 400px;
-        font-size: 2.5rem;
+        font-size: 44px;
         font-weight: 700;
         color: #000;
         margin-bottom: 1rem;
       }
   
       .description {
-        font-size: 1rem;
+        font-size: 18px;
         color: #333;
         margin-bottom: 2rem;
         line-height: 1.6;
@@ -29,7 +29,7 @@
   
       .button {
         display: inline-block;
-        background-color: #007bff;
+        background-color: #00BAFF;
         color: #fff;
         font-size: 1rem;
         padding: 1rem 1rem;
@@ -46,7 +46,8 @@
     }
   
     .image-container {
-
+       width: 670px;
+       
       .image {
         margin-left: 8rem;
         max-width: 100%;

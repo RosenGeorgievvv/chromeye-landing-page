@@ -1,0 +1,118 @@
+.work {
+    padding: 0rem 20rem;
+
+    .work-header {
+      text-align: center;
+      margin-bottom: 3rem;
+  
+      .work-title {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        color: #000000;
+      }
+  
+      .work-description {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 1.5;
+        max-width: 671px;
+        margin: 0 auto;
+      }
+    }
+  
+    .work-items {
+      display: grid;
+      gap: 2rem;
+  
+      .work-item {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+  
+        &.left {
+          .work-item-text {
+            order: 1; 
+            text-align: end;
+          }
+  
+          .work-item-image {
+            order: 2; 
+          }
+        }
+  
+        &.right {
+          .work-item-text {
+            order: 2; 
+            text-align: start;
+          }
+  
+          .work-item-image {
+            order: 1; 
+          }
+        }
+  
+        .work-item-text {
+          padding: 1rem;
+  
+          .item-title {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+            text-decoration-color: #00BAFF;
+            text-underline-offset: 20px;
+            text-decoration-thickness: 2px;
+          }
+  
+          .item-description {
+            font-size: 18px;
+            color: #000000;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+          }
+  
+          .item-button {
+            display: inline-block;
+            padding: 1rem 1rem;
+            background-color: #00BAFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+  
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+  
+        .work-item-image {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .work-items {
+        grid-template-columns: 1fr;
+  
+        .work-item {
+          grid-template-columns: 1fr;
+  
+          .work-item-text,
+          .work-item-image {
+            order: 0;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,144 @@
+.footer {
+    background-color: #ffffff;
+    color: #646464;
+    padding: 3rem 1rem;
+  
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 7rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      align-items: start;
+    }
+  
+    .footer-about {
+      .footer-logo {
+        max-width: 230px;
+        margin-bottom: 1rem;
+      }
+  
+      .footer-primary-menu {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+  
+        .menu-item {
+          margin-bottom: 0.8rem;
+          a {
+            text-decoration: none;
+            color: #646464;
+            font-size: 24px;
+            font-weight: 500;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #0077b5;
+            }
+          }
+        }
+      }
+  
+      .footer-intro {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+    }
+  
+    .footer-nav {
+      .footer-secondary-menu {
+        list-style: none;
+        padding-top: 5rem;
+        font-size: 24px;
+  
+        .menu-item {
+          margin-bottom: 0.8rem;
+  
+          a {
+            text-decoration: none;
+            color: #646464;
+            font-weight: 500;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #0077b5;
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+  
+      .footer-button {
+        display: flex;
+        background-color: #646464;
+        color: #fff;
+        border: none;
+        width: 50%;
+        margin-left: 60px;
+        padding: 20px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+  
+      .footer-socials {
+        .footer-heading {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 0rem;
+        }
+  
+        .footer-social-links {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+          padding: 0;
+          
+  
+          li img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+  
+      .footer-address {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 220px;
+        font-style: normal;
+      
+        a {
+          text-decoration: none;
+          color: #646464;
+          font-weight: 500;
+          transition: color 0.3s;
+        }
+
+        .email-link {
+          text-decoration: underline;
+          
+          span{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  
