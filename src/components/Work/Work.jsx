@@ -16,7 +16,7 @@ const Work = () => {
   return (
     <section className="services">
       <div className="content">
-        <h1 className="title">{data.title}</h1>
+        <h1 className="title">Our Services</h1>
         <p className="description">{data.description}</p>
         <div className="items">
           {data.items.map((item, index) => (

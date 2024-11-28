@@ -11,11 +11,11 @@ const Navbar = () => {
         </div>
         <nav className='links'>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/agency">Agency</Link></li>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Agency</li>
             </ul>
         </nav>
         <button className='touch'>Get in Touch</button>
