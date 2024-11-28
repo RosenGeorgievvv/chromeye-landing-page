@@ -1,28 +1,25 @@
 .services {
-    padding: 45rem 2rem;
-    text-align: center;
+    display: flex;
+    padding: 10rem 0rem;
     background-color: #fff;
-  
-    .content {
-      max-width: auto;
-      margin: 0 auto;
-    }
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   
     .title {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 1rem;
+      margin-bottom: 4rem;
       color: #000;
     }
   
     .description {
       font-size: 1rem;
       color: #666;
+      max-width: 31vw;
       margin-bottom: 2rem;
       line-height: 1.5;
-      max-width: 50%;
-      justify-content: center;
-      text-align: center;
     }
   
     .items {
@@ -36,13 +33,7 @@
       flex: 1 1 calc(25% - 1rem);
       max-width: 25%;
       text-align: center;
-      padding: rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-  
-      &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      }
+      padding: 4rem;
   
       .icon {
         max-width: 60px;

@@ -1,0 +1,50 @@
+.banner {
+    background-image: url('../../assets/assignment/chromeye_assignment_desktopbgbanner_v1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    .banner-content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 50px 200px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  
+      .banner-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1C73A8;
+        margin-bottom: 10px;
+      }
+  
+      .banner-description {
+        font-size: 16px;
+        color: #1C73A8;
+        margin-bottom: 20px;
+        max-width: 480px;
+        text-align: center;
+      }
+  
+      .banner-button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+  
