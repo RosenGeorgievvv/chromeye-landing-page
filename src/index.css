@@ -24,8 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  width: 100%;
+  display: block;
+  width: auto;
   min-height: 100vh; 
   padding: 0;
   z-index: 1000;
