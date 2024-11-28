@@ -24,9 +24,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: block; /* Change from flex to block for normal flow */
-  width: 100%; /* Ensure the body spans the full width */
-  min-height: 100vh; /* Still ensures the body covers the viewport height */
+  display: block;
+  width: 100%;
+  min-height: 100vh; 
   padding: 0;
   z-index: 1000;
 }
