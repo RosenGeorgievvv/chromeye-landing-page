@@ -1,3 +1,5 @@
+@import '../../variables/variables';
+
 .agency-service {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@
       display: block;
       height: 2px;
       width: 330px;
-      background-color: #00baff;
+      background-color: $button-color;
       margin: 10px auto 60px;
     }
   }
@@ -38,7 +40,7 @@
       .service-item {
         border-bottom: 1px solid #e0e0e0;
         padding: 15px 0;
-        background: #FFFFFF;
+        background: $text-color;
         
 
         &.active {

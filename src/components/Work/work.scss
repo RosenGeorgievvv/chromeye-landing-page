@@ -1,3 +1,5 @@
+@import '../../variables/variables';
+
 .work {
   padding: 0rem 20rem;
 
@@ -70,7 +72,7 @@
           font-weight: 700;
           margin-bottom: 1rem;
           text-decoration: underline;
-          text-decoration-color: #00BAFF;
+          text-decoration-color: $button-color;
           text-underline-offset: 20px;
           text-decoration-thickness: 2px;
         }
@@ -85,7 +87,7 @@
         .item-button {
           display: inline-block;
           padding: 1rem 1rem;
-          background-color: #00BAFF;
+          background-color: $button-color;
           color: #fff;
           text-decoration: none;
           border-radius: 4px;

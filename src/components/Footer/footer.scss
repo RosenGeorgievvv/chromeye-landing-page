@@ -1,6 +1,8 @@
+@import "../../variables/variables";
+
 .footer {
-  background-color: #ffffff;
-  color: #646464;
+  background-color: $text-color;
+  color: $background-color;
   padding: 3rem 1rem;
 
   .footer-container {
@@ -32,7 +34,7 @@
     .footer-button {
       display: flex;
       padding: 20px 20px;
-      background-color: #646464;
+      background-color: $background-color;
       color: #ffffff;
       border: none;
       border-radius: 4px;
@@ -45,7 +47,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #555;
+        background-color: $hover-background-color;
       }
 
       @media (min-width: 768px) {
@@ -66,7 +68,7 @@
 
         a {
           text-decoration: none;
-          color: #646464;
+          color: $background-color;
           font-size: 16px;
           font-weight: 500;
 
@@ -96,7 +98,7 @@
 
         a {
           text-decoration: none;
-          color: #646464;
+          color: $background-color;
           font-size: 16px;
 
           &:hover {
@@ -148,7 +150,7 @@
 
       a {
         text-decoration: none;
-        color: #646464;
+        color: $background-color;
       }
 
       .email-link {

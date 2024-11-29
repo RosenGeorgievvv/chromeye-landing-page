@@ -1,8 +1,10 @@
+@import '../../variables/variables';
+
 .services {
   display: flex;
   flex-direction: column;
   padding: 8rem 0;
-  background-color: #fff;
+  background-color: $text-color;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -88,7 +90,7 @@
 
   .button {
     display: inline-block;
-    background-color: #00aaff;
+    background-color: $button-color;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
