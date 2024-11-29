@@ -39,9 +39,9 @@
         border-bottom: 1px solid #e0e0e0;
         padding: 15px 0;
         background: #FFFFFF;
-        
-        &.active{
-            background: #EDEDED;
+
+        &.active {
+          background: #EDEDED;
         }
 
         .service-header {
@@ -49,7 +49,6 @@
           justify-content: space-between;
           align-items: center;
           cursor: pointer;
-          
 
           .service-title {
             font-size: 18px;
@@ -82,10 +81,43 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      order: 1; // Default order
 
       img {
         max-width: 100%;
         height: auto;
+      }
+    }
+  }
+//Responsiveness
+  @media (max-width: 768px) {
+    .agency-service-container {
+      flex-direction: column;
+
+      .service-image {
+        order: -1; 
+        margin-bottom: 20px; 
+      }
+
+      .service-list {
+        flex: 1 1 100%;
+
+        .service-item {
+          &.active {
+            .service-image {
+              display: block; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .agency-service-container {
+      .service-image {
+        order: -1;
+        margin-bottom: 15px; 
       }
     }
   }
