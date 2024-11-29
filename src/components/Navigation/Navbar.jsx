@@ -12,32 +12,40 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <div className="logo">
-        <img src={logo} alt="Chromeye Logo" className="logo-img" />
-      </div>
-      <nav className={`links ${menuOpen ? "hidden" : ""}`}>
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Agency</li>
-        </ul>
-      </nav>
-      <button className="touch">Get in Touch</button>
-      <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
-        <img src={menuOpen ? close : hamburger} alt={menuOpen ? "Close Menu" : "Hamburger Menu"} />
-      </button>
-      <div className={`dropdown ${menuOpen ? "open" : ""}`}>
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Agency</li>
-        </ul>
+    <header className="navbar">
+      <div className="wrapper">
+        <div className="logo">
+          <img src={logo} alt="Chromeye Logo" className="logo-img" />
+        </div>
+        <nav className={`links ${menuOpen ? "hidden" : ""}`}>
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Agency</li>
+          </ul>
+        </nav>
         <button className="touch">Get in Touch</button>
+        <button
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <img
+            src={menuOpen ? close : hamburger}
+            alt={menuOpen ? "Close Menu" : "Hamburger Menu"}
+          />
+        </button>
+        <div className={`dropdown ${menuOpen ? "open" : ""}`}>
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Agency</li>
+          </ul>
+          <button className="touch">Get in Touch</button>
+        </div>
       </div>
     </header>
   );

@@ -7,12 +7,19 @@ header {
   background-color: #fff;
   padding: 1rem 2rem;
   z-index: 10;
-  align-items: center;
-  justify-content: space-between;
+  
+  // Ensure the entire navbar is centered
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; // Center wrapper
+    width: 100%;
+  }
 
   .logo {
     display: flex;
-    margin-left: 1%;
 
     &-img {
       width: 230px;
@@ -22,19 +29,16 @@ header {
       @media screen and (max-width: 1200px) {
         width: 180px;
         height: 70px;
-        margin-left: 20px;
       }
 
       @media screen and (max-width: 768px) {
         width: 140px;
         height: 55px;
-        margin: 0 auto;
       }
 
       @media screen and (max-width: 480px) {
         width: 110px;
         height: 45px;
-        margin: 0 auto;
       }
     }
   }
@@ -76,11 +80,9 @@ header {
   }
 
   .touch {
-    display: flex;
-    margin-right: 300px;
     background-color: #646464;
     color: #fff;
-    padding: 1rem 1rem;
+    padding: 1rem;
     font-size: 18px;
     font-weight: 500;
     border: none;
@@ -93,11 +95,6 @@ header {
       background-color: #555;
     }
 
-    @media screen and (max-width: 1200px) {
-      padding: 0.8rem 0.8rem;
-      font-size: 16px;
-    }
-
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -108,20 +105,18 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    
 
     img {
       width: 40px;
       height: 40px;
       transition: all 0.3s ease;
-
     }
 
     @media screen and (max-width: 768px) {
       display: block;
-      margin-right: 2rem;
     }
   }
-
 
   .dropdown {
     display: none;
