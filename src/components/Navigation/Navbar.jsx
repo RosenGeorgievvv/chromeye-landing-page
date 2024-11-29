@@ -44,7 +44,7 @@ const Navbar = () => {
             <li>About</li>
             <li>Agency</li>
           </ul>
-          <button className="touch">Get in Touch</button>
+          <button className="touch-dropdown">Get in Touch</button>
         </div>
       </div>
     </header>

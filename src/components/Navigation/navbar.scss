@@ -131,6 +131,27 @@ header {
     justify-content: center;
     align-items: center;
 
+    .touch-dropdown {
+      width: 30%;
+      margin: 10px auto 0; 
+      padding: 20px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #646464;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+
     ul {
       display: flex;
       flex-direction: column;
@@ -142,7 +163,7 @@ header {
 
       li {
         width: 100%;
-        padding: 1rem 0;
+        padding: 1.2rem 0;
         border-bottom: 1px solid #ddd;
         font-size: 18px;
         font-weight: 600;
@@ -172,7 +193,7 @@ header {
   .dropdown.open {
     display: flex;
     top: 5.9rem;
-    height: calc(40vh - 60px);
+    height: calc(55vh - 30px);
     animation: slideDown 0.3s ease;
   }
 
