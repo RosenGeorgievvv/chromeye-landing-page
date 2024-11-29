@@ -76,11 +76,13 @@ const Footer = () => {
           <h2 className="footer-heading">Contact:</h2>
           <address className="footer-address">
             {companyData.address || 'Address not available.'} <br />
+            <span>Phone: </span>
             <a href="">
-              Phone: {companyData.phone || 'Phone not available'}
+              {companyData.phone || 'Phone not available'}
             </a> <br />
+            <span>Web: </span>
             <a href={`mailto:${companyData.email || ''}`} className='email-link'>
-              <span>Web:</span> {companyData.email || 'Email not available'}
+               {companyData.email || 'Email not available'}
             </a>
           </address>
         </section>
