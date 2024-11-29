@@ -19,38 +19,40 @@ const Services = () => {
 
   return (
     <section className="services">
-      <div className="content">
-        <h1 className="title">Our Services</h1>
-        <p className="description">{data.description}</p>
-        <div className="items">
-          {data.items.map((item, index) => (
-            <div key={index} className="item">
-              <img
-                src={item.icon}
-                alt={`${item.title} Icon`}
-                className="icon"
-              />
-              <h2 className="item-title">{item.title}</h2>
+      <div className="wrapper">
+        <div className="content">
+          <h1 className="title">Our Services</h1>
+          <p className="description">{data.description}</p>
+          <div className="items">
+            {data.items.map((item, index) => (
+              <div key={index} className="item">
+                <img
+                  src={item.icon}
+                  alt={`${item.title} Icon`}
+                  className="icon"
+                />
+                <h2 className="item-title">{item.title}</h2>
 
-              {/* Condition render for Icons */}
-              {(item.title === "Web Assets" || item.title === "Corporate Identity") && (
-                <img src={plusIcon} alt="Plus Icon" className="icon-center" />
-              )}
-              {(item.title === "Dynamic Digital Ads" || item.title === "3D Visuals") && (
-                <img src={minusIcon} alt="Minus Icon" className="icon-center" />
-              )}
+                {/* Condition render for Icons */}
+                {(item.title === "Web Assets" || item.title === "Corporate Identity") && (
+                  <img src={plusIcon} alt="Plus Icon" className="icon-center" />
+                )}
+                {(item.title === "Dynamic Digital Ads" || item.title === "3D Visuals") && (
+                  <img src={minusIcon} alt="Minus Icon" className="icon-center" />
+                )}
 
-              {/* Condition render for Description */}
-              {item.title !== "Web Assets" && item.title !== "Corporate Identity" && (
-                <p className="item-description">{item.description}</p>
-              )}
+                {/* Condition render for Description */}
+                {item.title !== "Web Assets" && item.title !== "Corporate Identity" && (
+                  <p className="item-description">{item.description}</p>
+                )}
 
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
+          <a href={data.buttonUrl} className="button">
+            {data.buttonLabel}
+          </a>
         </div>
-        <a href={data.buttonUrl} className="button">
-          {data.buttonLabel}
-        </a>
       </div>
     </section>
   );
