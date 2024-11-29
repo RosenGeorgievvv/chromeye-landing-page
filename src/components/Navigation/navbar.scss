@@ -12,7 +12,7 @@ header {
 
   .logo {
     display: flex;
-    margin-left: 270px;
+   
 
     &-img {
       width: 230px;
@@ -99,7 +99,7 @@ header {
     }
 
     @media screen and (max-width: 768px) {
-      display: none; // Hide the button and move it to the hamburger dropdown
+      display: none;
     }
   }
 
@@ -114,30 +114,19 @@ header {
       height: 40px;
       transition: all 0.3s ease;
 
-      &:hover {
-        filter: brightness(0) saturate(100%) invert(51%) sepia(91%)
-          saturate(548%) hue-rotate(172deg) brightness(97%) contrast(91%);
-      }
     }
 
-    &.active {
-      img {
-        filter: brightness(0) saturate(100%) invert(51%) sepia(91%)
-          saturate(548%) hue-rotate(172deg) brightness(97%) contrast(91%);
-      }
-    }
-
-    // Show hamburger menu under 768px
     @media screen and (max-width: 768px) {
       display: block;
+      margin-right: 2rem;
     }
   }
 
-  // Dropdown Menu (Hamburger Expansion)
+
   .dropdown {
-    display: none; // Hidden by default
+    display: none;
     position: fixed;
-    top: 60px; // Starts below the hamburger icon
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -150,7 +139,7 @@ header {
     ul {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 50%;
       text-align: center;
       list-style: none;
       padding: 0;
@@ -185,16 +174,16 @@ header {
     }
   }
 
-  // Show dropdown when active
   .dropdown.open {
     display: flex;
-    height: calc(100vh - 60px); // Expand to fill the screen below the hamburger
+    top: 5.9rem;
+    height: calc(40vh - 60px);
     animation: slideDown 0.3s ease;
   }
 
   @keyframes slideDown {
     from {
-      transform: translateY(-20%);
+      transform: translateY(-10%);
       opacity: 0;
     }
     to {
