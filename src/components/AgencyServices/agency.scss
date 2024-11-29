@@ -1,4 +1,4 @@
-@import '../../variables/variables';
+@use '../../variables/variables';
 
 .agency-service {
   display: flex;
@@ -19,7 +19,7 @@
       display: block;
       height: 2px;
       width: 330px;
-      background-color: $button-color;
+      background-color: variables.$button-color;
       margin: 10px auto 60px;
     }
   }
@@ -40,7 +40,7 @@
       .service-item {
         border-bottom: 1px solid #e0e0e0;
         padding: 15px 0;
-        background: $text-color;
+        background: variables.$text-color;
         
 
         &.active {

@@ -1,4 +1,4 @@
-@import '../../variables/variables';
+@use '../../variables/variables';
 
 .home {
   display: flex;
@@ -32,8 +32,8 @@
 
     .button {
       display: inline-block;
-      background-color: $button-color;
-      color: $text-color;
+      background-color: variables.$button-color;
+      color: variables.$text-color;
       font-size: 1rem;
       padding: 1rem 1rem;
       border: none;

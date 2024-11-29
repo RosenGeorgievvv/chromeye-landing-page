@@ -1,4 +1,4 @@
-@import "../../variables/variables";
+@use "../../variables/variables";
 
 header {
   display: flex;
@@ -6,7 +6,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $text-color;
+  background-color: variables.$text-color;
   padding: 1rem 2rem;
   z-index: 10;
   
@@ -80,7 +80,7 @@ header {
   }
 
   .touch {
-    background-color: $background-color;
+    background-color: variables.$background-color;
     color: #fff;
     padding: 1rem;
     font-size: 18px;
@@ -92,7 +92,7 @@ header {
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: $hover-background-color;
+      background-color: variables.$hover-background-color;
     }
 
     @media screen and (max-width: 768px) {
@@ -126,7 +126,7 @@ header {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: $text-color;
+    background-color: variables.$text-color;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 9;
     flex-direction: column;
@@ -141,7 +141,7 @@ header {
       font-weight: 600;
       text-transform: uppercase;
       text-align: center;
-      background-color: $background-color;
+      background-color: variables.$background-color;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       color: #fff;
       border: none;
@@ -150,7 +150,7 @@ header {
       transition: all 0.3s ease;
   
       &:hover {
-        background-color: $hover-background-color;
+        background-color: variables.$hover-background-color;
       }
     }
 
@@ -174,7 +174,7 @@ header {
         transition: all 0.3s ease;
 
         &:hover {
-          color: $button-color;
+          color: variables.$button-color;
         }
 
         &:last-child {

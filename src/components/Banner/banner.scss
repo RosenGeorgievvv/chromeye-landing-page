@@ -1,4 +1,4 @@
-@import '../../variables/variables';
+@use '../../variables/variables';
 
 .banner {
   background-image: url('../../assets/assignment/chromeye_assignment_desktopbgbanner_v1.jpg');
@@ -51,7 +51,7 @@
     }
 
     .banner-button {
-      background-color: $background-color;
+      background-color: variables.$background-color;
       color: #fff;
       border: none;
       padding: 20px 20px;
@@ -61,7 +61,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: $hover-background-color;
+        background-color: variables.$hover-background-color;
       }
     }
   }

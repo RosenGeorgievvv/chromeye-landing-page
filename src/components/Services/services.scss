@@ -1,10 +1,10 @@
-@import '../../variables/variables';
+@use '../../variables/variables';
 
 .services {
   display: flex;
   flex-direction: column;
   padding: 8rem 0;
-  background-color: $text-color;
+  background-color: variables.$text-color;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@
 
   .button {
     display: inline-block;
-    background-color: $button-color;
+    background-color: variables.$button-color;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
