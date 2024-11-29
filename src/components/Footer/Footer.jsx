@@ -34,7 +34,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <section className="footer-about">
+          
           <img src={companyData.logo || ''} alt="logo" className="footer-logo" />
+          <button className="footer-button">Request a Call</button>
           <ul className="footer-primary-menu">
             {primaryMenu.map((item, index) => (
               <li key={index} className="menu-item">
@@ -56,7 +58,7 @@ const Footer = () => {
         </nav>
 
         <section className="footer-contact">
-          <button className="footer-button">Request a Call</button>
+          
           <div className="footer-socials">
             <h2 className="footer-heading">Follow Us:</h2>
             <ul className="footer-social-links">

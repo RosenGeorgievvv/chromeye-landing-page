@@ -4,24 +4,61 @@
   padding: 3rem 1rem;
 
   .footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1280px;
     margin: 0 auto;
-    align-items: start;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
   }
 
   .footer-about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     .footer-logo {
-      max-width: 230px;
+      max-width: 200px;
       margin-bottom: 1rem;
+    }
+
+    .footer-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #646464;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #555;
+      }
+
+      @media (min-width: 768px) {
+        position: absolute;
+        right: 2rem;
+        margin-top: 0;
+        align-self: flex-end;
+      }
     }
 
     .footer-primary-menu {
       list-style: none;
       padding: 0;
-      margin: 1rem 0;
+      margin-top: 2rem;
 
       .menu-item {
         margin-bottom: 0.8rem;
@@ -29,9 +66,8 @@
         a {
           text-decoration: none;
           color: #646464;
-          font-size: 24px;
+          font-size: 16px;
           font-weight: 500;
-          transition: color 0.3s;
 
           &:hover {
             color: #0077b5;
@@ -41,16 +77,18 @@
     }
 
     .footer-intro {
-      font-size: 0.9rem;
+      margin-top: 1rem;
+      font-size: 14px;
       line-height: 1.6;
     }
   }
 
   .footer-nav {
+    flex: 1;
+
     .footer-secondary-menu {
       list-style: none;
-      padding-top: 6rem;
-      font-size: 24px;
+      padding: 0;
 
       .menu-item {
         margin-bottom: 0.8rem;
@@ -58,8 +96,7 @@
         a {
           text-decoration: none;
           color: #646464;
-          font-weight: 500;
-          transition: color 0.3s;
+          font-size: 16px;
 
           &:hover {
             color: #0077b5;
@@ -70,46 +107,27 @@
   }
 
   .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 0rem;
-
-    .footer-button {
-      display: flex;
-      background-color: #646464;
-      color: #fff;
-      border: none;
-      width: 50%;
-      margin-left: 60px;
-      padding: 20px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #555;
-      }
-    }
+    flex: 1;
 
     .footer-socials {
+      margin-bottom: 1rem;
+
       .footer-heading {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
-        margin-bottom: 0rem;
+        margin-bottom: 0.5rem;
       }
 
       .footer-social-links {
-        list-style: none;
         display: flex;
+        list-style: none;
         gap: 1rem;
-        padding: 0;
 
         li img {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           cursor: pointer;
-          transition: transform 0.3s;
+          transition: transform 0.3s ease;
 
           &:hover {
             transform: scale(1.1);
@@ -119,16 +137,16 @@
     }
 
     .footer-address {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.6;
-      max-width: 220px;
-      font-style: normal;
 
       a {
         text-decoration: none;
         color: #646464;
-        font-weight: 500;
-        transition: color 0.3s;
+
+        &:hover {
+          color: #0077b5;
+        }
       }
 
       .email-link {
@@ -141,80 +159,83 @@
     }
   }
 
-  // Media Queries for 768px
+  // Responsiveness
   @media (max-width: 768px) {
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      align-items: center;
-    }
+    .footer-about {
+      border-bottom: 2px solid #EDEDED;
+      .footer-logo {
+        max-width: 180px;
+      }
 
-    .footer-about,
-    .footer-nav,
-    .footer-contact {
-      text-align: center;
-      font-size: 18px;
-
-      .footer-primary-menu,
-      .footer-secondary-menu,
-      .footer-social-links {
-        font-size: 16px;
+      .footer-button {
+        align-self: flex-start;
+        margin-top: 1rem;
+        padding: 20px 20px;
       }
     }
+    .footer-social-links{
+      align-items: flex-start;
+      border-bottom: 2px solid #EDEDED;
+      padding-bottom: 20px;
+    }
+    .footer-social-links li img {
+      align-items: flex-start;
+    }
 
-    .footer-button {
+    .footer-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .footer-nav,
+    .footer-contact {
       width: 100%;
-      margin: 0;
+      border-bottom: 2px solid #EDEDED;
+    }
+
+    .footer-primary-menu,
+    .footer-secondary-menu {
+      font-size: 14px;
+
+      .menu-item a {
+        font-size: 14px;
+      }
     }
   }
 
-  // Media Queries for 480px
   @media (max-width: 480px) {
     .footer {
       padding: 2rem 1rem;
     }
 
     .footer-container {
-      gap: 1.5rem;
+      flex-direction: column;
     }
 
-    .footer-about {
-      .footer-logo {
-        max-width: 180px;
-      }
-
-      .footer-primary-menu .menu-item a {
-        font-size: 16px;
-      }
-
-      .footer-intro {
-        font-size: 14px;
-      }
+    .footer-logo {
+      max-width: 150px;
     }
 
-    .footer-nav {
-      .footer-secondary-menu .menu-item a {
-        font-size: 16px;
+    .footer-button {
+      padding: 8px 16px;
+      font-size: 12px;
+      margin-top: 0.5rem;
+    }
+
+    .footer-primary-menu,
+    .footer-secondary-menu {
+      .menu-item a {
+        font-size: 12px;
       }
     }
 
-    .footer-contact {
-      gap: 1rem;
+    .footer-social-links li img {
+      width: 30px;
+      height: 30px;
+    }
 
-      .footer-button {
-        padding: 15px;
-        font-size: 14px;
-      }
-
-      .footer-address {
-        font-size: 14px;
-      }
-
-      .footer-social-links li img {
-        width: 40px;
-        height: 40px;
-      }
+    .footer-address {
+      font-size: 12px;
     }
   }
 }
