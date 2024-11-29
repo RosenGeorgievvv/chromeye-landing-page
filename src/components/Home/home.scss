@@ -80,12 +80,12 @@
     }
   }
   @media screen and (max-width: 768px) {
-    flex-direction: column; /* Stack content and image vertically */
+    flex-direction: column; 
     align-items: center;
     padding: 2rem;
   
     .content {
-      text-align: center; /* Center the text */
+      text-align: center;
     }
   
     .content .title {
@@ -101,14 +101,14 @@
     .content .button {
       font-size: 0.9rem;
       padding: 0.8rem 1rem;
-      margin: 0 auto; /* Center button */
+      margin: 0 auto;
     }
   
     .image-container {
-      margin-top: 2rem; /* Add spacing between sections */
+      margin-top: 2rem; 
       .image {
         margin: 0 auto;
-        width: 90%; /* Slightly smaller image */
+        width: 90%; 
       }
     }
   }
@@ -135,13 +135,13 @@
     .content .button {
       font-size: 0.8rem;
       padding: 0.6rem 0.8rem;
-      margin: 0 auto; /* Center button */
+      margin: 0 auto;
     }
   
     .image-container {
       margin-top: 1.5rem;
       .image {
-        width: 80%; /* Further reduce image size */
+        width: 80%;
       }
     }
   }
