@@ -39,6 +39,7 @@
         border-bottom: 1px solid #e0e0e0;
         padding: 15px 0;
         background: #FFFFFF;
+        
 
         &.active {
           background: #EDEDED;
@@ -49,6 +50,7 @@
           justify-content: space-between;
           align-items: center;
           cursor: pointer;
+          margin-inline: 12px;
 
           .service-title {
             font-size: 18px;
