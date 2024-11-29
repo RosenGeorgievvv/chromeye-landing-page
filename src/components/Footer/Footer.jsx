@@ -80,7 +80,7 @@ const Footer = () => {
               Phone: {companyData.phone || 'Phone not available'}
             </a> <br />
             <a href={`mailto:${companyData.email || ''}`} className='email-link'>
-              <span>Web: </span>{companyData.email || 'Email not available'}
+              <span>Web:</span> {companyData.email || 'Email not available'}
             </a>
           </address>
         </section>
