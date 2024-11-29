@@ -32,7 +32,7 @@
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 5rem;
 
       &.left {
         .work-item-text {
@@ -101,7 +101,43 @@
       }
     }
   }
-//Responsiveness
+
+  // Responsiveness for 1280px
+  @media (max-width: 1280px) {
+    padding: 0rem 10rem; // Reduce padding for smaller screens
+
+    .work-header {
+      .work-title {
+        font-size: 34px; // Slightly smaller title
+      }
+
+      .work-description {
+        font-size: 16px; // Reduce description font size
+        max-width: 600px; // Narrow the description width
+      }
+    }
+
+    .work-items {
+      gap: 3rem; // Adjust gap between work items
+
+      .work-item {
+        gap: 3rem; // Reduce gap between columns
+        grid-template-columns: 1fr 1fr; // Keep the two-column layout
+
+        .work-item-text {
+          .item-title {
+            font-size: 32px; // Smaller item title
+          }
+
+          .item-description {
+            font-size: 16px; // Smaller description
+          }
+        }
+      }
+    }
+  }
+
+  // Responsiveness for 768px
   @media (max-width: 768px) {
     padding: 0rem 4rem;
 
@@ -124,7 +160,6 @@
         grid-template-columns: 1fr; 
         gap: 1rem;
 
-
         &.left, &.right {
           .work-item-text {
             order: 2; 
@@ -135,6 +170,7 @@
             order: 1; 
           }
         }
+
         &:nth-of-type(1) {
           .work-item-image {
             order: 1; 
@@ -148,6 +184,7 @@
     }
   }
 
+  // Responsiveness for 480px
   @media (max-width: 480px) {
     padding: 0rem 2rem;
 
