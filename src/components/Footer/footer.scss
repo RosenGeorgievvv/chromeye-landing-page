@@ -205,6 +205,11 @@
         font-size: 14px;
       }
     }
+    .footer-address{
+      font-style: normal;
+      font-weight: 500;
+      max-width: 15rem;
+    }
   }
 
   @media (max-width: 480px) {
@@ -240,6 +245,7 @@
 
     .footer-address {
       font-size: 12px;
+      font-style: normal;
     }
   }
 }
