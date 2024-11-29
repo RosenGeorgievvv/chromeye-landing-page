@@ -1,91 +1,95 @@
 .banner {
-    background-image: url('../../assets/assignment/chromeye_assignment_desktopbgbanner_v1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 570px;
+  background-image: url('../../assets/assignment/chromeye_assignment_desktopbgbanner_v1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1280px; 
+    margin: 0 auto;
     width: 100%;
-  
-    .banner-content {
-      background-color: #fff;
-      padding: 30px 152px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  
-      .banner-title {
-        font-size: 44px;
-        font-weight: 700;
-        color: #1C73A8;
-        margin-bottom: 10px;
-        font-family: 'Poppins', system-ui, sans-serif;
-      }
-  
-      .banner-description {
-        font-size: 16px;
-        color: #1C73A8;
-        margin-bottom: 20px;
-        max-width: 480px;
-        text-align: center;
-        font-family: 'Poppins', system-ui, sans-serif;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-  
-      .banner-button {
-        background-color: #646464;
-        color: #fff;
-        border: none;
-        padding: 20px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: #555;
-        }
-      }
-    }
-
-    //Responsiveness
-    @media(max-width: 768px){
-      .banner-content{
-        width: 40%;
-
-        .banner-title{
-          font-size: 36px;
-        }
-        .banner-description{
-          display: flex;
-          text-align: center;
-          margin-left: -20%;
-          font-size: 15px;
-          width: 140%
-          
-        }
-      }
-    }
-
-    @media(max-width: 480px){
-      .banner-content{
-        width: 30%;
-
-        .banner-title{
-          font-size: 33px;
-        }
-        .banner-description{
-          display: flex;
-          text-align: center;
-          margin-left: -20%;
-          font-size: 13px;
-          width: 120%
-        }
-      }
-    }
-
+    padding: 0 16px; 
   }
-  
+
+  .banner-content {
+    background-color: #fff;
+    padding: 30px 152px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+    .banner-title {
+      font-size: 44px;
+      font-weight: 700;
+      color: #1C73A8;
+      margin-bottom: 10px;
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
+
+    .banner-description {
+      font-size: 16px;
+      color: #1C73A8;
+      margin-bottom: 20px;
+      max-width: 480px;
+      text-align: center;
+      font-family: 'Poppins', system-ui, sans-serif;
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+      display: -webkit-box;
+      -webkit-line-clamp: 3; 
+      -webkit-box-orient: vertical;
+    }
+
+    .banner-button {
+      background-color: #646464;
+      color: #fff;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+
+  // Responsiveness
+  @media (max-width: 768px) {
+    .banner-content {
+      padding: 20px 40px;
+
+      .banner-title {
+        font-size: 36px;
+      }
+      .banner-description {
+        font-size: 15px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-content {
+      padding: 15px 20px;
+
+      .banner-title {
+        font-size: 33px;
+      }
+      .banner-description {
+        font-size: 13px;
+        max-width: 100%;
+      }
+    }
+  }
+}
