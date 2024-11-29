@@ -22,7 +22,7 @@ const AgencyService = () => {
   };
 
   return (
-    <div className="agency-service">
+    <section className="agency-service">
       <h1 className="agency-service-title">Agency Services</h1>
       <div className="agency-service-container">
         <div className="service-list">
@@ -46,7 +46,7 @@ const AgencyService = () => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

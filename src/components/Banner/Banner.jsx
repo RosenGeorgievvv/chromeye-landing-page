@@ -4,7 +4,7 @@ import './banner.scss';
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="wrapper">
         <div className="banner-content">
           <h1 className="banner-title">Ready to Get Started</h1>
@@ -14,7 +14,7 @@ const Banner = () => {
           <button className="banner-button">Request a Call</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
