@@ -85,5 +85,68 @@
         background-color: #0077cc;
       }
     }
+
+  
+    //Responsiveness
+    @media (max-width: 768px) {
+      .description {
+        max-width: 60%; 
+      }
+  
+      .items {
+        flex-direction: column; 
+        gap: 20px;
+      }
+  
+      .item {
+        flex: none;
+        max-width: 100%; 
+        padding: 2rem; 
+      }
+  
+      .button {
+        padding: 16px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  
+ 
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.8rem; 
+      }
+  
+      .description {
+        font-size: 16px;
+        max-width: 80%; 
+        margin-bottom: 1.5rem;
+      }
+  
+      .items {
+        flex-direction: column; 
+        gap: 20px;
+      }
+  
+      .item {
+        text-align: center;
+        padding: 1.5rem; 
+        margin: 0 auto; 
+      }
+  
+      .item-title {
+        font-size: 1.1rem;
+      }
+  
+      .item-description {
+        font-size: 0.8rem;
+      }
+  
+      .button {
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 12px;
+      }
+    }
   }
+  
   
